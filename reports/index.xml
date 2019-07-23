@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="2">
+
+  <testsuite name="index"
+    errors="1" failures="0" hostname="" id="" package="index" skipped="1"
+    tests="2" time="0.005000" timestamp="Wed, 03 Jul 2019 18:05:59 GMT">
+  
+    <testcase name="Step one: navigate to LinkedIn" classname="index" time="0.005000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Index / Step one: navigate to LinkedIn]:
+
+  TypeError: browser.url(...).waitForElementVisible(...).useXpath(...).expect.elementPresent is not a function
+    at Object.Step one: navigate to LinkedIn (/Users/mariana.sandoval/Desktop/SDET/nightwatch/tests/index.js:7:17)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at processTicksAndRejections (internal/process/task_queues.js:82:9)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Step two: Join In" classname="index">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
